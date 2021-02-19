@@ -70,7 +70,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "sautocomplete-result-list.v2",
+      "search-bar",
       "locale-switcher",
       "login",
       "minicart.v2"

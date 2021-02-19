@@ -50,5 +50,14 @@
       "text": "**PAGE NOT FOUND**",
       "font": "t-heading-1"
     }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"]
   }
 }
