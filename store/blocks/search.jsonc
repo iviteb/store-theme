@@ -62,6 +62,9 @@
 
   "search-result-layout.desktop": {
     "children": [
+      "search-banner",
+      "did-you-mean",
+      "search-suggestions",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -146,6 +149,9 @@
 
   "search-result-layout.mobile": {
     "children": [
+      "search-banner",
+      "did-you-mean",
+      "search-suggestions",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
