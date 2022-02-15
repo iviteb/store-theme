@@ -8,7 +8,8 @@
       "product-specification-group#table",
       "shelf.relatedProducts",
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "flex-layout.row#blog-related-posts"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -179,6 +180,21 @@
         "Twitter": false,
         "Pinterest": true
       }
+    }
+  },
+
+  "flex-layout.row#blog-related-posts": {
+    "children": ["blog-related-posts.wordpress-related-posts"],
+    "props": {
+      "blockClass": "blogRelatedPosts"
+    }
+  },
+
+  "blog-related-posts.wordpress-related-posts": {
+    "props": {
+      "title": "Blog Related Posts",
+      "showAuthors": true,
+      "showExcerpts": true
     }
   }
 }

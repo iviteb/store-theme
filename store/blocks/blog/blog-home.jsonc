@@ -1,0 +1,76 @@
+{
+  "store.blog-home": {
+    "blocks": [
+      "flex-layout.row#blog-breadcrumb",
+      "flex-layout.row#blog-title",
+      "flex-layout.row#latest-news",
+      "flex-layout.row#blog-search",
+      "flex-layout.row#latest-news-from-category",
+      "flex-layout.row#blog-home"
+    ]
+  },
+  "flex-layout.row#blog-breadcrumb": {
+    "children": ["blog-breadcrumb.wordpress-breadcrumb"],
+    "props": {
+      "marginTop": 5,
+      "marginBottom": 5,
+      "blockClass": ["blogBreadcrumbTitle", "gridPadding"]
+    },
+    "title": "Blog Breadcrumb Row"
+  },
+  "blog-breadcrumb.wordpress-breadcrumb": {
+    "props": {
+      "subcategoryUrls": true
+    }
+  },
+  "flex-layout.row#blog-title": {
+    "children": ["rich-text#blog-title"],
+    "props": {
+      "marginTop": {
+        "desktop": 8,
+        "mobile": 7
+      },
+      "marginBottom": {
+        "desktop": 3,
+        "mobile": 0
+      },
+      "blockClass": ["blogTitle", "gridPadding"]
+    },
+    "title": "Blog Title Row"
+  },
+  "rich-text#blog-title": {
+    "props": {
+      "text": "# Blog",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["blogTitle", "noMargin"]
+    },
+    "title": "Blog Title"
+  },
+
+  "flex-layout.row#blog-search": {
+    "children": ["blog-search.wordpress-search"],
+    "props": {
+      "blockClass": "blogSearchContainer"
+    }
+  },
+  "flex-layout.row#blog-home": {
+    "children": ["blog-all-posts.wordpress-all-posts"],
+    "props": {
+      "marginTop": {
+        "desktop": 3,
+        "mobile": 0
+      },
+      "blockClass": ["blogHome", "gridPadding"]
+    },
+    "title": "Blog Home Row"
+  },
+  "blog-all-posts.wordpress-all-posts": {
+    "props": {
+      "postsPerPage": 15,
+      "mediaSize": "medium",
+      "blockClass": "blogHome",
+      "subcategoryUrls": true
+    }
+  }
+}

@@ -7,5 +7,20 @@
   },
   "store.custom#contact-us": {
     "path": "/contact-us"
+  },
+  "store.blog-home": {
+    "path": "/blog(/page/:page)"
+  },
+  "store.blog-category": {
+    "path": "/blog/category/:categoryslug_id(/page/:page)"
+  },
+  "store.blog-category#subcategory": {
+    "path": "/blog/category/:categoryslug/:subcategoryslug_id"
+  },
+  "store.blog-post": {
+    "path": "/blog/post/:slug_id"
+  },
+  "store.blog-search-result": {
+    "path": "/blog/search/:term_id(/page/:page)"
   }
 }

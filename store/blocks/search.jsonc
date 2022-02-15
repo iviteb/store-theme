@@ -23,7 +23,10 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#category-related-posts"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -33,7 +36,10 @@
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#category-related-posts"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -82,6 +88,20 @@
   "flex-layout.row#searchtitle": {
     "children": ["search-title.v2"]
   },
+
+  "flex-layout.row#category-related-posts": {
+    "children": ["blog-search-list.wordpress-category-related-posts"],
+    "props": {
+      "blockClass": "categoryRelatedPosts"
+    }
+  },
+
+  "blog-search-list.wordpress-category-related-posts": {
+    "props": {
+      "categoryIdentifier": "Tech"
+    }
+  },
+
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
@@ -108,7 +128,10 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+    "children": [
+      "flex-layout.col#productCount",
+      "flex-layout.row#orderByAndSwitcher"
+    ]
   },
   "flex-layout.row#orderByAndSwitcher": {
     "children": ["order-by.v2", "gallery-layout-switcher"],
@@ -272,29 +295,19 @@
     "props": {
       "name": "grid"
     },
-    "children": [
-      "icon-grid",
-      "responsive-layout.desktop#textOptionGrid"
-    ]
+    "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
   },
   "gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
-    "children": [
-      "icon-inline-grid",
-      "responsive-layout.desktop#textOptionList"
-    ]
+    "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
   },
   "responsive-layout.desktop#textOptionGrid": {
-    "children": [
-      "rich-text#option-grid"
-    ]
+    "children": ["rich-text#option-grid"]
   },
   "responsive-layout.desktop#textOptionList": {
-    "children": [
-      "rich-text#option-list"
-    ]
+    "children": ["rich-text#option-list"]
   },
   "rich-text#option-grid": {
     "props": {

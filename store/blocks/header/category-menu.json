@@ -6,7 +6,8 @@
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#blog"
     ]
   },
   "menu-item#category-apparel": {
@@ -23,17 +24,13 @@
         "text": "Apparel & Accessories"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#category-apparel"]
   },
   "vtex.menu@2.x:submenu#category-apparel": {
     "props": {
       "width": "auto"
     },
-    "children": [
-      "vtex.menu@2.x:menu#category-apparel"
-    ]
+    "children": ["vtex.menu@2.x:menu#category-apparel"]
   },
   "vtex.menu@2.x:menu#category-apparel": {
     "props": {
@@ -119,42 +116,44 @@
         "text": "More"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
+    "blocks": ["vtex.menu@2.x:submenu#more"]
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blog",
+        "noFollow": true,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#more"]
   },
   "vtex.menu@2.x:submenu#more": {
     "props": {
       "width": "100%"
     },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
+    "children": ["flex-layout.row#menu-more"]
   },
   "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
+    "children": ["flex-layout.col#menu-more-1", "flex-layout.col#menu-more-2"]
   },
   "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
+    "children": ["vtex.menu@2.x:menu#more"]
   },
   "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
+    "children": ["info-card#home"]
   },
   "vtex.menu@2.x:menu#more": {
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
-    ]
+    "children": ["menu-item#about-us", "menu-item#faq"]
   },
   "menu-item#about-us": {
     "props": {

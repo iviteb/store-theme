@@ -1,0 +1,40 @@
+{
+  "store.blog-post": {
+    "blocks": [
+      "flex-layout.row#blog-breadcrumb",
+      "flex-layout.row#blog-article-navigation",
+      "flex-layout.row#blog-post"
+    ]
+  },
+
+  "flex-layout.row#blog-article-navigation": {
+    "children": ["blog-post-container.wordpress"],
+    "props": {
+      "blockClass": "blogArticleNavigation"
+    }
+  },
+
+  "blog-post-container.wordpress": {
+    "children": ["blog-post-navigation.wordpress"]
+  },
+
+  "flex-layout.row#blog-post": {
+    "children": ["blog-post-details.wordpress-post-details"],
+    "props": {
+      "blockClass": ["blogPost", "gridPadding"]
+    },
+    "title": "Blog Post Row"
+  },
+
+  "blog-post-details.wordpress-post-details": {
+    "children": ["blog-related-products.wordpress-related-products"],
+    "props": {
+      "subcategoryUrls": true
+    }
+  },
+
+  "blog-related-products.wordpress-related-products": {
+    "blocks": ["product-summary.shelf"],
+    "props": {}
+  }
+}

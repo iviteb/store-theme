@@ -1,0 +1,37 @@
+{
+  "store.blog-search-result": {
+    "blocks": [
+      "flex-layout.row#blog-breadcrumb",
+      "flex-layout.row#blog-search",
+      "flex-layout.row#blog-search-teaser",
+      "flex-layout.row#blog-search-content"
+    ]
+  },
+
+  "flex-layout.row#blog-search-teaser": {
+    "children": ["search-blog-articles-preview.wordpress"],
+    "props": {
+      "blockClass": "blogSearchTeaser"
+    }
+  },
+
+  "search-blog-articles-preview.wordpress": {
+    "props": {
+      "subcategoryUrls": true
+    }
+  },
+
+  "flex-layout.row#blog-search-content": {
+    "children": ["flex-layout.col#blog-search-content"],
+    "props": {
+      "blockClass": "blogSearchContent"
+    }
+  },
+
+  "flex-layout.col#blog-search-content": {
+    "children": ["blog-search-list.wordpress-search-list"],
+    "props": {
+      "blockClass": "blogSearchContent"
+    }
+  }
+}

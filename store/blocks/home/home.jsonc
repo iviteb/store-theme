@@ -11,6 +11,8 @@
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
+      "flex-layout.row#latest-news",
+      "flex-layout.row#latest-news-from-category",
       "newsletter"
     ]
   },
@@ -98,6 +100,49 @@
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+
+  "flex-layout.row#latest-news": {
+    "children": ["blog-latest-posts-preview.wordpress-latest-posts-preview"],
+    "props": {
+      "marginBottom": {
+        "desktop": 8,
+        "mobile": 0
+      },
+      "horizontalAling": "center",
+      "blockClass": ["latestNews", "gridPadding"]
+    },
+    "title": "Latest Blogs News Row"
+  },
+  "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+    "props": {
+      "title": "Latest Blogs News",
+      "showExcerpts": true,
+      "showAuthors": true,
+      "subcategoryUrls": true,
+      "blockClass": "latestNews"
+    }
+  },
+  "flex-layout.row#latest-news-from-category": {
+    "children": ["blog-category-preview.wordpress-category-preview"],
+    "props": {
+      "marginBottom": {
+        "desktop": 8,
+        "mobile": 0
+      },
+      "horizontalAling": "center",
+      "blockClass": ["latestNewsCategory", "gridPadding"]
+    },
+    "title": "Latest Blogs Category News Row"
+  },
+  "blog-category-preview.wordpress-category-preview": {
+    "props": {
+      "title": "Latest Blogs News Category",
+      "showExcerpts": true,
+      "showAuthors": true,
+      "subcategoryUrls": true,
+      "blockClass": "latestNewsCategory"
     }
   }
 }
