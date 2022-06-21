@@ -25,6 +25,8 @@
       "subcategoryUrls": true,
       "postsPerPage": 15,
       "mediaSize": "medium",
+      "showAuthors": true,
+      "showExcerpts": true,
       "blockClass": "blogCategory"
     }
   },

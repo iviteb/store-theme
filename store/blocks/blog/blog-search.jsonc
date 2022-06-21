@@ -17,6 +17,8 @@
 
   "search-blog-articles-preview.wordpress": {
     "props": {
+      "showExcerpts": true,
+      "showAuthors": true,
       "subcategoryUrls": true
     }
   },
@@ -32,6 +34,14 @@
     "children": ["blog-search-list.wordpress-search-list"],
     "props": {
       "blockClass": "blogSearchContent"
+    }
+  },
+
+  "blog-search-list.wordpress-search-list": {
+    "props": {
+      "showExcerpts": true,
+      "showAuthors": true,
+      "subcategoryUrls": true
     }
   }
 }

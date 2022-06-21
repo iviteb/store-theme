@@ -142,6 +142,7 @@
       "showExcerpts": true,
       "showAuthors": true,
       "subcategoryUrls": true,
+      "category": 18,
       "blockClass": "latestNewsCategory"
     }
   }
