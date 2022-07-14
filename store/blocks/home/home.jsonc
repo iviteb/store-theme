@@ -98,12 +98,20 @@
 
   "rich-text#link": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
+      "text": "**Reach us at**\nvtex.com.br",
       "blockClass": "link"
     }
   },
 
   "collapsible-block": {
-    "props": {}
+    "children": ["list-context.image-list#demo"],
+    "props": {
+      "collapseContent": true,
+      "collapseHeight": 400,
+      "useAdvanced": true,
+      "ShowMoreAdvanced": "rich-text#link",
+      "ShowLessAdvanced": "rich-text#link",
+      "blockClass": "test"
+    }
   }
 }
