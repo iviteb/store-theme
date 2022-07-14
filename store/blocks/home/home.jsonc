@@ -98,9 +98,18 @@
 
   "rich-text#link": {
     "props": {
-      "text": "**Reach us at**\nvtex.com.br",
+      "text": "**Show More**\n # ADVANCED",
       "blockClass": "link"
-    }
+    },
+    "title": "Show More Advanced"
+  },
+
+  "rich-text#link-2": {
+    "props": {
+      "text": "**Show Less**\n # ADVANCED",
+      "blockClass": "link"
+    },
+    "title": "Show Less Advanced"
   },
 
   "collapsible-block": {
@@ -110,7 +119,7 @@
       "collapseHeight": 400,
       "useAdvanced": true,
       "ShowMoreAdvanced": "rich-text#link",
-      "ShowLessAdvanced": "rich-text#link",
+      "ShowLessAdvanced": "rich-text#link-2",
       "blockClass": "test"
     }
   }
