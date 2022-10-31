@@ -1,17 +1,20 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "__fold__",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      // "list-context.image-list#demo",
+      // /* You can make references to blocks defined in other files.
+      //  * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      // "flex-layout.row#deals",
+      // "__fold__",
+      // "rich-text#shelf-title",
+      // "flex-layout.row#shelf",
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
+      // "newsletter"
+      "just-a-div#block-01",
+      "just-a-div#block-02",
+      "just-a-div#block-03"
     ]
   },
 
@@ -99,6 +102,27 @@
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
+    }
+  },
+
+  "just-a-div#block-01": {
+    "props": {
+      "htmlId": "block-01",
+      "blockClass": ["testSection", "testSection01"]
+    }
+  },
+
+  "just-a-div#block-02": {
+    "props": {
+      "htmlId": "block-02",
+      "blockClass": ["testSection", "testSection02"]
+    }
+  },
+
+  "just-a-div#block-03": {
+    "props": {
+      "htmlId": "block-03",
+      "blockClass": ["testSection", "testSection03"]
     }
   }
 }
