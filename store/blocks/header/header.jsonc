@@ -7,8 +7,8 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
+      // "flex-layout.row#1-desktop",
+      // "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop"
     ]
   },
@@ -46,6 +46,13 @@
     "children": ["highlight-active-section"],
     "title": "Sticky Header"
   },
+
+  "highlight-active-section": {
+    "props": {
+      "headerClassName": "wrapper--sticky-header"
+    }
+  },
+
   "flex-layout.row#4-desktop": {
     "props": {
       "blockClass": "main-header",
